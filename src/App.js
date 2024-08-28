@@ -10,14 +10,17 @@ function App() {
     return a + b
  }
 
+ const url = "https://via.placeholder.com/150"
+
   return (
     <div className="App">
-      <header className="App-header">
+     
         <h1>Olá React</h1>
         <p>Meu primeiro app</p>
         <p>Olá, {newName}</p>
-        <p>Soma: {sum(1+2)}</p>
-      </header>
+        <p>Soma: {sum(1 , 2)}</p>
+        <img src={url} alt="minha imagem" />
+     
     </div>
   );
 }
