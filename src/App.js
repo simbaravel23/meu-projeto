@@ -1,6 +1,7 @@
 import './App.css';
 import HelloWord from './componentes/HelloWord';
-
+import SayMyName from './componentes/SayMyName';
+import Pessoa from './componentes/Pessoa';
 function App() {
 
  const name = 'Ravel'
@@ -10,7 +11,6 @@ function App() {
     return a + b
  }
 
- const url = "https://via.placeholder.com/150"
 
   return (
     <div className="App">
@@ -19,8 +19,10 @@ function App() {
         <p>Meu primeiro app</p>
         <p>Olá, {newName}</p>
         <p>Soma: {sum(1 , 2)}</p>
-        <img src={url} alt="minha imagem" />
+       
         <HelloWord/>
+        <SayMyName nome = {newName}/>
+        <Pessoa nome="Ravel" idade="37" profissao="professor" foto= "https://via.placeholder.com/150"/>
         
     </div>
   );
