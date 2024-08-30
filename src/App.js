@@ -2,6 +2,8 @@ import './App.css';
 import HelloWord from './componentes/HelloWord';
 import SayMyName from './componentes/SayMyName';
 import Pessoa from './componentes/Pessoa';
+import Frase from './componentes/Frase';
+
 function App() {
 
  const name = 'Ravel'
@@ -15,7 +17,8 @@ function App() {
   return (
     <div className="App">
      
-        <h1>Olá React</h1>
+        <h1>Testanto Css</h1>
+        <Frase/>
         <p>Meu primeiro app</p>
         <p>Olá, {newName}</p>
         <p>Soma: {sum(1 , 2)}</p>
@@ -23,7 +26,8 @@ function App() {
         <HelloWord/>
         <SayMyName nome = {newName}/>
         <Pessoa nome="Ravel" idade="37" profissao="professor" foto= "https://via.placeholder.com/150"/>
-        
+        <Frase/>
+        <Frase/>
     </div>
   );
 }
