@@ -25,14 +25,14 @@ function App() {
         <p>Olá, {newName}</p>
         <p>Soma: {sum(1 , 2)}</p>
        
-       
+       <List/>
         <HelloWord/>
         <SayMyName nome = {newName}/>
         <Pessoa nome="Ravel" idade="37" profissao="professor" foto= "https://via.placeholder.com/150"/>
         <Frase/>
         <Frase/>
         <Clock/>
-        <List/>
+        
 
     </div>
   );
